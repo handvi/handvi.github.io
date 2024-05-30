@@ -55,6 +55,22 @@
         }
         .navbar {
             margin-bottom: 0;
+            background-color: black; 
+        }
+        .navbar-toggler {
+            border: none; 
+        }
+        .navbar-toggler-icon {
+            background-color: white; 
+        }
+        .navbar.fixed-top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar.navbar-expand-lg .collapse.navbar-collapse {
+            justify-content: flex-end;
         }
         .profile-pic {
             border-radius: 50%;
@@ -86,7 +102,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#">HAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
