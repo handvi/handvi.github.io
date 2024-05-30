@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAN - Programmer & Cyber Security Enthusiast</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar-brand {
+            font-family: 'Jacques Francois Shadow', serif;
         }
         .jumbotron {
             background: url('https://source.unsplash.com/1600x900/?technology,programming') no-repeat center center;
@@ -29,6 +35,10 @@
         }
         .social-icons a:hover {
             color: #007bff;
+        }
+        .skills .fa-code {
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -66,7 +76,7 @@
     </div>
 
     <section id="about" class="py-5">
-        <divisi class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h2>About Me</h2>
@@ -83,17 +93,25 @@
         <div class="container">
             <h2 class="text-center">Skills</h2>
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-js fa-code"></i>
                     <h3>JavaScript</h3>
                     <p>Proficient in modern JavaScript frameworks and libraries such as React, Angular, and Node.js.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-3 text-center">
+                    <i class="fab fa-python fa-code"></i>
                     <h3>Python</h3>
                     <p>Experienced in Python development for web applications, data analysis, and automation.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-shield-alt fa-code"></i>
                     <h3>Cyber Security</h3>
                     <p>Enthusiastic about ethical hacking, network security, and penetration testing.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-code fa-code"></i>
+                    <h3>C</h3>
+                    <p>Skilled in system programming with C for developing efficient and robust software.</p>
                 </div>
             </div>
         </div>
