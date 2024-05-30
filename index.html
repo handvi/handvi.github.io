@@ -1,4 +1,4 @@
-GithdCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,10 @@ GithdCTYPE html>
             height: 100%;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
         }
         .bg {
-            background-image: url('https://source.unsplash.com/1600x900/?cybersecurity');
+            background-image: url('https://source.unsplash.com/1600x900/?technology,programming');
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -36,6 +37,8 @@ GithdCTYPE html>
             left: 50%;
             transform: translate(-50%, -50%);
             display: flex;
+            justify-content: space-around;
+            width: 100px;
         }
         .loading-animation div {
             width: 20px;
@@ -70,10 +73,10 @@ GithdCTYPE html>
     <div class="bg">
         <div class="overlay">
             <h1 class="display-4">H'and'V</h1>
-            <p class="lead">Programmer JavaScript dan Python</p>
+            <p class="lead">JavaScript and Python Programmer</p>
             <p class="lead">Cyber Security Enthusiast</p>
-            <a href="https://github.com/yourusername" class="btn btn-primary btn-lg" target="_blank">
-                <i class="fab fa-github"></i>Visit My Github
+            <a href="https://github.com/handvi" class="btn btn-primary btn-lg" target="_blank">
+                <i class="fab fa-github"></i> Visit my GitHub
             </a>
         </div>
     </div>
@@ -82,6 +85,7 @@ GithdCTYPE html>
             setTimeout(() => {
                 document.querySelector(".loading-animation").style.display = "none";
                 document.querySelector(".bg").style.display = "block";
+                document.body.style.overflow = "auto"; // Enable scrolling after loading
             }, 3000);
         });
     </script>
