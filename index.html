@@ -53,15 +53,46 @@
                 transform: translateY(-100vh) translateX(calc(100vw - 10px));
             }
         }
+        .navbar-brand {
+            padding: 0;
+            margin-right: 15px;
+        }
+        p, label {
+            font-family: 'Shadows Into Light', cursive;
+        }
         .navbar {
             margin-bottom: 0;
-            background-color: black; 
+            background-color: black;
         }
         .navbar-toggler {
-            border: none; 
+            border: none;
+            background-color: transparent; /* Hapus latar belakang hamburger menu */
+            padding: 0.25rem;
+            outline: none;
+            cursor: pointer;
         }
         .navbar-toggler-icon {
-            background-color: white; 
+            width: 30px;
+            height: 3px;
+            background-color: white; /* Warna strip hamburger menu */
+            display: block;
+            transition: all 0.3s;
+        }
+        .navbar-toggler-icon-bar {
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            display: block;
+            transition: all 0.3s;
+        }
+        .navbar-toggler-icon-bar.middle-bar {
+            transform: translateY(-2px);
+        }
+        .navbar-toggler-icon-bar.top-bar.open {
+            transform: translateY(6px) rotate(45deg);
+        }
+        .navbar-toggler-icon-bar.bottom-bar.open {
+            transform: translateY(-6px) rotate(-45deg);
         }
         .navbar.fixed-top {
             position: fixed;
@@ -71,6 +102,12 @@
         }
         .navbar.navbar-expand-lg .collapse.navbar-collapse {
             justify-content: flex-end;
+        }
+        .jumbotron {
+            padding-top: 150px; /* Ubah padding atas jumbotron agar navbar tidak menutupi konten */
+            background-image: url('https://via.placeholder.com/1500x800'); /* Ganti dengan gambar sesuai kebutuhan */
+            background-size: cover;
+            color: white;
         }
         .profile-pic {
             border-radius: 50%;
@@ -102,10 +139,14 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#">HAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+                <span class="navbar-toggler-icon-bar top-bar"></span>
+                <span class="navbar-toggler-icon-bar middle-bar"></span>
+                <span class="navbar-toggler-icon-bar bottom-bar"></span>
+            </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
@@ -126,10 +167,8 @@
     </nav>
 
     <div class="jumbotron jumbotron-fluid text-center" id="home">
-        <div class="particles" id="particles-js"></div>
         <div class="container">
-            <img src="https://i.ibb.co.com/fY22FR8/photo-2024-05-18-17-22-39.jpg" alt="HAN Profile Picture" class="profile-pic">
-            <h1 class="display-4"></h1>
+            <h1 class="display-4">HAN</h1>
             <p class="lead">JavaScript & Python Programmer | Cyber Security Enthusiast</p>
         </div>
     </div>
