@@ -14,7 +14,7 @@
             overflow: hidden;
         }
         .bg {
-            background-image: url('https://source.unsplash.com/1600x900/?technology,programming');
+            background-image: url('https://source.unsplash.com/1600x900/?programming,cybersecurity');
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -62,6 +62,18 @@
                 transform: scale(1);
             }
         }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
@@ -75,9 +87,17 @@
             <h1 class="display-4">H'and'V</h1>
             <p class="lead">JavaScript and Python Programmer</p>
             <p class="lead">Cyber Security Enthusiast</p>
-            <a href="https://github.com/handvi" class="btn btn-primary btn-lg" target="_blank">
-                <i class="fab fa-github"></i> Visit my GitHub
-            </a>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://medium.com/@yourusername" target="_blank">
+                    <i class="fab fa-medium"></i>
+                </a>
+            </div>
         </div>
     </div>
     <script>
