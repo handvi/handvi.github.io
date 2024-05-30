@@ -34,6 +34,14 @@
             background-color: black;
             color: white;
         }
+        .typed-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid white; /* Animasi efek mengetik */
+            margin-right: 10px; /* Jarak antara teks dan border right */
+            padding-right: 10px; /* Padding kanan agar tidak terlalu dekat dengan border */
+        }
     </style>
 </head>
 <body>
@@ -68,7 +76,7 @@
     <div class="jumbotron jumbotron-fluid text-center" id="home">
         <div class="container">
             <h1 class="display-4"></h1>
-            <p class="lead">JavaScript & Python Programmer | Cyber Security Enthusiast</p>
+            <p class="typed-text lead">JavaScript & Python Programmer | Cyber Security Enthusiast</p>
         </div>
     </div>
 
@@ -100,16 +108,6 @@
                     <h5>Python</h5>
                     <p>Experienced in Python development for web applications, data analysis, and automation.</p>
                 </div>
-                <div class="col-md-3 text-center">
-                    <i class="fas fa-shield-alt fa-3x"></i>
-                    <h5>Cyber Security</h5>
-                    <p>Enthusiastic about ethical hacking, network security, and penetration testing.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <i class="fas fa-code fa-3x"></i>
-                    <h5>C Lang</h5>
-                    <p>Skilled in system programming with C for developing efficient and robust software.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -139,7 +137,7 @@
         </div>
     </section>
 
-    <footer class="footer py-3">
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p>&copy; 2024 HAN. All rights reserved.</p>
         </div>
@@ -147,5 +145,19 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Create particles
+        const particlesContainer = document.getElementById('particles-js');
+
+        for (let i = 0; i < 100; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.top = Math.random() * 100 + 'vh';
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            particle.style.animationDelay = (Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
 </body>
 </html>
