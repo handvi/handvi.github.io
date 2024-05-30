@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+GithdCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,12 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .bg {
-            background-image: url('https://source.unsplash.com/1600x900/?technology,programming');
+            background-image: url('https://source.unsplash.com/1600x900/?cybersecurity');
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            display: none;
         }
         .overlay {
             background-color: rgba(0, 0, 0, 0.5);
@@ -30,11 +31,11 @@
             text-align: center;
         }
         .loading-animation {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            display: none;
+            display: flex;
         }
         .loading-animation div {
             width: 20px;
@@ -72,16 +73,15 @@
             <p class="lead">Programmer JavaScript dan Python</p>
             <p class="lead">Cyber Security Enthusiast</p>
             <a href="https://github.com/yourusername" class="btn btn-primary btn-lg" target="_blank">
-                <i class="fab fa-github"></i> Kunjungi GitHub Saya
+                <i class="fab fa-github"></i>Visit My Github
             </a>
         </div>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const loadingAnimation = document.querySelector(".loading-animation");
-            loadingAnimation.style.display = "flex";
             setTimeout(() => {
-                loadingAnimation.style.display = "none";
+                document.querySelector(".loading-animation").style.display = "none";
+                document.querySelector(".bg").style.display = "block";
             }, 3000);
         });
     </script>
