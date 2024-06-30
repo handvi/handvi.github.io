@@ -15,61 +15,12 @@
             margin: 0;
         }
 
-        .curtain {
-            width: 70%;
-            height: 50vh;
+        .container {
             background: #fff;
+            padding: 20px 40px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-        }
-
-        .curtain:before,
-        .curtain:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 50%;
-            height: 100%;
-            background: #fff;
-            z-index: 1;
-            transition: transform 1s ease;
-        }
-
-        .curtain:before {
-            left: 0;
-            transform-origin: left;
-            transform: translateX(0);
-        }
-
-        .curtain:after {
-            right: 0;
-            transform-origin: right;
-            transform: translateX(0);
-        }
-
-        .curtain.open:before {
-            transform: translateX(-100%);
-        }
-
-        .curtain.open:after {
-            transform: translateX(100%);
-        }
-
-        .message {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
-            opacity: 0;
-            transition: opacity 1s ease 0.5s;
-        }
-
-        .curtain.open .message {
-            opacity: 1;
         }
 
         h1 {
@@ -85,17 +36,9 @@
     </style>
 </head>
 <body>
-    <div class="curtain" onclick="openCurtain()">
-        <div class="message">
-            <h1>Thank You, Putri</h1>
-            <p>For wanting to be my friend, even though it's only virtual and I've never met. I've felt a lot of positive changes. After 7 years of losing direction and not knowing myself, today I've found that lost direction again.</p>
-        </div>
+    <div class="container">
+        <h1>Thank You, Putri</h1>
+        <p>For wanting to be my friend, even though it's only virtual and I've never met. I've felt a lot of positive changes. After 7 years of losing direction and not knowing myself, today I've found that lost direction again.</p>
     </div>
-
-    <script>
-        function openCurtain() {
-            document.querySelector('.curtain').classList.toggle('open');
-        }
-    </script>
 </body>
 </html>
