@@ -2,7 +2,7 @@
 layout: post
 title: "Creating Mathematical Formulas with Commander.js"
 date: 2024-10-04
-categories: [tutorial, javascript]
+categories: [programming, javascript]
 tags: [JavaScript, Commander.js, mathematics]
 ---
 
