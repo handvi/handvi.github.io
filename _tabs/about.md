@@ -4,7 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## About Me
 
 I am a passionate coder and cyber enthusiast with expertise in JavaScript, Python, and Rust. Currently, I am focusing my studies on the Internet of Things (IoT) and diving deep into IT security, specifically in penetration testing. My goal is to develop robust and secure applications while understanding the intricate dynamics of cybersecurity.
 
