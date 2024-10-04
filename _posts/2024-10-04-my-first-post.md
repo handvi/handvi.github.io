@@ -73,15 +73,6 @@ node math.js --multiply 5,4
 node math.js --divide 20,5
 ```
 
-
-### Instructions
-
-1. Copy the entire content above.
-2. Create a new file named `2024-10-04-creating-mathematical-formulas-with-commander.md` in your `_posts` directory.
-3. Paste the copied content into the file.
-4. Save the file.
-5. Run `bundle exec jekyll serve` to start your Jekyll server and view the new post in your browser.
-
 ## More Resources
 
 For more information, you can visit [Commander JS](https://www.npmjs.com/package/commander/v/5.1.0) for a search engine.
