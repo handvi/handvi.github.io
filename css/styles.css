@@ -13,7 +13,7 @@ body {
     padding: 10px 20px;
 }
 
-/* Menambahkan efek hover pada menu */
+
 .navbar-nav .nav-item .nav-link {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -56,6 +56,52 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.form-label {
+    font-size: 0.9rem;
+}
+
+.form-control {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+
+.btn f {
+    display: inline-block;
+    width: 70%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.btn:hover {
+    background-color: #218838;
+}
+
+
+#contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+#contact .btn {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+#contact .form-control {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+
+#contact .mb-3 {
+    margin-bottom: 15px;
+}
 
 section {
     padding: 60px 0;
