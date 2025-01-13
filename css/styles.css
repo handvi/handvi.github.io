@@ -3,6 +3,41 @@ body {
     line-height: 1.6;
 }
 
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+
+.navbar {
+    padding: 10px 20px;
+}
+
+/* Menambahkan efek hover pada menu */
+.navbar-nav .nav-item .nav-link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #198754;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #218838;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar, .navbar-nav .nav-item .nav-link {
+    font-family: 'Poopert', sans-serif;
+}
+
+
 .skill-icon {
     width: 120px;
     height: auto;
@@ -12,6 +47,13 @@ body {
 
 .skill-icon:hover {
     transform: scale(1.2);
+}
+
+.about-text {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 
 
