@@ -3,24 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faisal Hanafi</title>
+    <title>Faisal Hanafi | Security Researcher & Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poopert&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #9b59b6;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8f9fa;
+        }
+        
+        .navbar {
+            transition: all 0.3s ease;
+            background-color: rgba(44, 62, 80, 0.9) !important;
+        }
+        
+        .navbar.scrolled {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--dark-color) 0%, #34495e 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            opacity: 0.15;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .text-highlight {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 600;
+        }
+        
+        .badge-tech {
+            background-color: var(--dark-color);
+            color: white;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .btn-primary-custom {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-icon {
+            font-size: 1.5rem;
+            color: var(--light-color);
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.8;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .cyber-bg {
+            background-color: #f1f8fe;
+        }
+        
+        .project-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#home">HAN</a>
+        <a class="navbar-brand fw-bold" href="#home">FH<span class="text-highlight">.</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -28,61 +184,90 @@
 </nav>
 
 <!-- Hero Section -->
-<section id="home" class="vh-100 bg-dark text-light d-flex align-items-center justify-content-center text-center">
-    <div>
-        <h1 class="display-3">Hello, I'm <span class="text-success">Faisal Hanafi</span></h1>
-        <p class="lead">A Developer Passionate About Javascript Coder</p>
-        <a href="#contact" class="btn btn-success btn-lg">Hire Me</a>
+<section id="home" class="vh-100 d-flex align-items-center justify-content-center text-center hero-section text-light">
+    <div class="hero-content">
+        <h1 class="display-3 fw-bold mb-4">Faisal Hanafi</h1>
+        <p class="lead mb-4">Cyber Security Researcher | AI Enthusiast | Software Developer</p>
+        <div class="d-flex justify-content-center gap-3 mb-5">
+            <a href="#contact" class="btn btn-primary-custom btn-lg">Contact Me</a>
+            <a href="#projects" class="btn btn-outline-light btn-lg">View Projects</a>
+        </div>
+        <div>
+            <a href="https://twitter.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://medium.com/@yourusername" target="_blank" class="social-icon"><i class="fab fa-medium-m"></i></a>
+            <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
     </div>
 </section>
 
-<!-- About Section -->
 <!-- About Section -->
 <section id="about" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
+    <div class="container py-5">
+        <h2 class="text-center mb-5 section-title">About Me</h2>
         <p class="about-text">
-            Hi, I'm <strong>Faisal Hanafi</strong>, a passionate <strong>JavaScript Developer</strong> with a strong focus on the MERN stack (MongoDB, Express, React, Node.js).
-            I enjoy tackling complex challenges and building scalable, efficient applications. My journey in coding started with an interest in solving real-world problems and continuously improving my skills.
-            I thrive on learning new technologies and methodologies that help me build innovative solutions. Whether it's designing full-stack applications or optimizing web performance, I'm always up for a challenge.
+            I'm <strong>Faisal Hanafi</strong>, a <strong class="text-highlight">Cyber Security Researcher</strong> and full-stack developer with expertise in blockchain technologies and AI systems. My passion lies in building secure systems and researching vulnerabilities across web applications and smart contracts.
         </p>
         <p class="about-text">
-            I am always eager to take on new challenges and improve myself as a developer.
-            Currently, I am diving deeper into the world of IoT (Internet of Things) for Johny Five and Node-red. I enjoy experimenting with cutting-edge technologies and leveraging my skills to create secure, innovative solutions.
+            With a strong foundation in both offensive and defensive security practices, I specialize in penetration testing, vulnerability assessment, and secure architecture design. My development skills span across Solidity for smart contracts, Rust for high-performance security tools, and Python for AI/ML applications.
+        </p>
+        <p class="about-text">
+            Currently exploring the intersection of AI and cybersecurity, focusing on anomaly detection systems and AI-powered security tools. I regularly contribute to open-source security projects and write about emerging threats in the Web3 ecosystem.
         </p>
     </div>
 </section>
 
-
-<!-- Projects Section -->
-<section id="projects" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">Description of project 1. This is a great project!</p>
+<!-- Expertise Section -->
+<section id="expertise" class="py-5 cyber-bg">
+    <div class="container py-5">
+        <h2 class="text-center mb-5 section-title">My Expertise</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-alt text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h4 class="card-title">Cyber Security</h4>
+                        <p class="card-text">
+                            Penetration testing, vulnerability research, threat modeling, and security architecture design for web applications and blockchain systems.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="badge badge-tech">Pen Testing</span>
+                            <span class="badge badge-tech">Reverse Engineering</span>
+                            <span class="badge badge-tech">Security Audits</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">Description of project 2. This is another great project!</p>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-code text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h4 class="card-title">Blockchain Dev</h4>
+                        <p class="card-text">
+                            Smart contract development and auditing with Solidity, building secure decentralized applications, and Web3 integration.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="badge badge-tech">Solidity</span>
+                            <span class="badge badge-tech">Rust</span>
+                            <span class="badge badge-tech">Web3</span>
+                            <span class="badge badge-tech">Ether.js</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
-                        <p class="card-text">Description of project 3. This is an amazing project!</p>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-brain text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h4 class="card-title">AI Research</h4>
+                        <p class="card-text">
+                            Developing AI-powered security tools, anomaly detection systems, and researching machine learning applications in cybersecurity.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="badge badge-tech">Python</span>
+                            <span class="badge badge-tech">TensorFlow</span>
+                            <span class="badge badge-tech">ML Security</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,65 +276,161 @@
 </section>
 
 <!-- Skills Section -->
-<!-- Skills Section -->
 <section id="skills" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Skills</h2>
-        <div class="row text-center">
-            <!-- MongoDB -->
-            <div class="col-md-3">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="img-fluid skill-icon">
-                <h5>MongoDB</h5>
+    <div class="container py-5">
+        <h2 class="text-center mb-5 section-title">Technical Skills</h2>
+        <div class="row text-center g-4">
+            <!-- Security -->
+            <div class="col-md-3 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="img-fluid skill-icon">
+                <h5>Security Tools</h5>
             </div>
-            <!-- Express -->
-            <div class="col-md-3">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express.js" class="img-fluid skill-icon">
-                <h5>Express.js</h5>
+            <div class="col-md-3 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="img-fluid skill-icon">
+                <h5>Python</h5>
             </div>
-            <!-- React -->
-            <div class="col-md-3">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" class="img-fluid skill-icon">
-                <h5>React.js</h5>
+            <!-- Blockchain -->
+            <div class="col-md-3 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" alt="Rust" class="img-fluid skill-icon">
+                <h5>Rust</h5>
             </div>
-            <!-- Node.js -->
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" alt="Solidity" class="img-fluid skill-icon">
+                <h5>Solidity</h5>
+            </div>
+            <!-- Web Development -->
+            <div class="col-md-3 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="img-fluid skill-icon">
+                <h5>JavaScript</h5>
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="img-fluid skill-icon">
+                <h5>React</h5>
+            </div>
+            <div class="col-md-3 col-6">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="img-fluid skill-icon">
                 <h5>Node.js</h5>
             </div>
+            <div class="col-md-3 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="img-fluid skill-icon">
+                <h5>MongoDB</h5>
+            </div>
         </div>
     </div>
 </section>
 
-
-<!-- Contact Section -->
-<section id="contact" class="py-10 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <form>
-            <div class="col-mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
+<!-- Projects Section -->
+<section id="projects" class="py-5 cyber-bg">
+    <div class="container py-5">
+        <h2 class="text-center mb-5 section-title">Featured Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1620343804949-7b1a0b6408da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="card-img-top project-img" alt="Smart Contract Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Contract Auditor</h5>
+                        <p class="card-text">Automated security analysis tool for Solidity smart contracts with vulnerability detection and gas optimization suggestions.</p>
+                        <div class="tech-stack">
+                            <span class="badge badge-tech">Solidity</span>
+                            <span class="badge badge-tech">Rust</span>
+                            <span class="badge badge-tech">Web3</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="card-img-top project-img" alt="AI Security Project">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Security Analyzer</h5>
+                        <p class="card-text">Machine learning system for detecting smart contract vulnerabilities using pattern recognition and anomaly detection.</p>
+                        <div class="tech-stack">
+                            <span class="badge badge-tech">Python</span>
+                            <span class="badge badge-tech">TensorFlow</span>
+                            <span class="badge badge-tech">Solidity</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" class="card-img-top project-img" alt="Rust Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Rust Security Toolkit</h5>
+                        <p class="card-text">High-performance security tools suite built with Rust for blockchain transaction analysis and monitoring.</p>
+                        <div class="tech-stack">
+                            <span class="badge badge-tech">Rust</span>
+                            <span class="badge badge-tech">Blockchain</span>
+                            <span class="badge badge-tech">Cryptography</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Tombol Kirim Pesan -->
-            <a href="mailto:emailmu@example.com" class="btn btn-success btn-lg f">Send Message</a>
-        </form>
+        </div>
     </div>
 </section>
 
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container py-5">
+        <h2 class="text-center mb-5 section-title">Get In Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary-custom btn-lg px-5">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-<footer class="bg-dark text-light text-center py-3">
-    <p>&copy; 2025 Faisal Hanafi. All Rights Reserved.</p>
+<footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+        <div class="mb-3">
+            <a href="https://twitter.com/yourusername" target="_blank" class="social-icon mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon mx-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://medium.com/@yourusername" target="_blank" class="social-icon mx-2"><i class="fab fa-medium-m"></i></a>
+            <a href="https://github.com/yourusername" target="_blank" class="social-icon mx-2"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="mb-0">&copy; 2025 Faisal Hanafi. All Rights Reserved.</p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 </body>
 </html>
